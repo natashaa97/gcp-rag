@@ -28,7 +28,7 @@ BACKEND_URL = os.getenv("BACKEND_URL", "http://localhost:8000")
 # Page configuration — must be the FIRST Streamlit call
 # ─────────────────────────────────────────────
 st.set_page_config(
-    page_title="RAG Chatbot",
+    page_title="Robot Naz",
     page_icon="🤖",
     layout="wide",
     initial_sidebar_state="expanded",
@@ -313,7 +313,7 @@ def load_history(session_id: str) -> list:
 # SIDEBAR
 # ─────────────────────────────────────────────
 with st.sidebar:
-    st.markdown("## 🤖 RAG Chatbot")
+    st.markdown("## 🤖 Robot Naz")
     st.markdown("*Powered by Gemini + Vertex AI*")
 
     # Backend status
@@ -408,7 +408,7 @@ with st.sidebar:
 # Header banner
 st.markdown("""
 <div class="app-header">
-    <h1>🤖 RAG Chatbot</h1>
+    <h1>🤖 Robot Naz</h1>
     <p>Ask questions about your uploaded documents — answers grounded in your content</p>
 </div>
 """, unsafe_allow_html=True)
